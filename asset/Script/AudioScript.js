@@ -37,7 +37,7 @@ const musiclist =[
     {
         id: 3, 
         title: "internet Love ",
-        file: "internetLove.mp3",
+        file: "InternetLove.mp3",
         
     },
     {
