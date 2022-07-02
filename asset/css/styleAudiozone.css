@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima&display=swap');
+
+html {
+    font-family: 'Arima', cursive;
+}
+
+#music-zone {
+    max-width: 500px;
+    margin: 0 auto;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.16);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 15px 15px 30px;
+}
+
+.music-name {
+
+    font-size: 20;
+    font-weight: 500;
+    text-align: center;
+
+}
+
+.timer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 20px;
+
+}
+
+.player-inner {
+
+    width: 50px;
+    height: 50px;
+    border-radius: 100rem;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 8px 24px;
+
+}
+
+.range {
+
+    -webkit-appearance: none;
+    /* Hides the slider so that custom slider can be made */
+    width: 100%;
+    /* Specific width is required for Firefox. */
+    background: transparent;
+    /* Otherwise white in Chrome */
+    margin-bottom: 30px;
+
+
+}
+.range::-webkit-slider-runnable-track {
+    width: 100%;
+   height: 4px;
+   background-color: #eee;
+}
+.range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 100rem;
+   background-color: chartreuse;
+   margin-top: -5px;
+   box-shadow: 0px 0px 0px 3px white, 0 0 0 6px rgba(100, 100, 111, 0.05);
+  }

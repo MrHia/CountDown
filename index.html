@@ -4,24 +4,43 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="asset/css/style.css">
-        
-    
+    <link rel="stylesheet" href="asset/css/styleAudiozone.css">
+    <title>Đếm ngược ngày thi THPT quốc gia</title>
 </head>
 
 <body>
-    <div class="main" >
-
-        <h1 > Thời gian còn lại</h1>
+    <div class="main">
+        <h3 style="text-align: left;">Đếm ngược những ngày cuối kì thi thpt quốc gia</h3>
+        <h1> Thời gian còn lại</h1>
         <p id="date">Ngày thi 7/7/2022</p>
         <p id="content" style=" text-align: center;"></p>
-
         <p id="CountDown"></p>
-        <audio controls autoplay loop muted>
-            <source src="asset/Audio/lofi.mp3" type="audio/mpeg">
-          </audio>
+
+
+        <div style="text-align: center;" id="music-zone">
+            <div class="music-name">Anh yêu em </div>
+            <input type="range" name="range" class="range">
+            <audio src="" id="songplay"></audio>
+            <div class="timer">
+                <div class="duration">2</div>
+                <div class="reaining">2</div>
+            </div>
+            <div class="controls">
+                <ion-icon name="play-back" class="Play-back"></ion-icon>
+                <div class="player-inner">
+                    <ion-icon name="play"></ion-icon>
+                </div>
+                <ion-icon name="play-forward" class="Play-forward"></ion-icon>
+            </div>
+
+        </div>
+        
     </div>
-    
-<script src="asset/Script/script.js"></script>
+
+    <script src="asset/Script/script.js"></script>
+    <script src="asset/Script/AudioScript.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
